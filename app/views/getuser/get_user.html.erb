@@ -1,0 +1,61 @@
+<form>
+	<input type="text" id="username" />
+	<input type="button" value="submit" onclick="getusername()">
+</form>
+<%= link_to 'Continue', getuser_get_user_path, :id => 'Continue_path' %>
+<%= @username %>
+<br><br>
+<%= "Problem Solved =" %>
+<% if @ujwal>='0' && @ujwal<='9' %>
+<%= @ujwal %>
+<% end %>
+<% if @ujwal1>='0' && @ujwal1<='9' %>
+<%= @ujwal1 %>
+<% end %>
+<% if @ujwal2>='0' && @ujwal2<='9' %>
+<%= @ujwal2 %>
+<% end %>
+<% if @ujwal3>='0' && @ujwal3<='9' %>
+<%= @ujwal3 %>
+<% end %>
+
+<br><br>
+<script type="text/javascript">
+	function getusername(){
+		var user = document.getElementById("username").value;
+		var url = $('#Continue_path').attr('href') + '?user=' + user;
+		$('#Continue_path').attr('href',url);
+	}
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

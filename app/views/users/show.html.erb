@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Username:</strong>
+  <%= @user.username %>
+</p>
+<% @data %>
+<% @reponse %>
+<br><br>
+<%= "Problem Solved =" %>
+<% if @ujwal>='0' && @ujwal<='9' %>
+<%= @ujwal %>
+<% end %>
+<% if @ujwal1>='0' && @ujwal1<='9' %>
+<%= @ujwal1 %>
+<% end %>
+<% if @ujwal2>='0' && @ujwal2<='9' %>
+<%= @ujwal2 %>
+<% end %>
+<% if @ujwal3>='0' && @ujwal3<= '9' %>
+<%= @ujwal3 %>
+<% end %>
+<br><br>
+<%= link_to 'Edit', edit_user_path(@user) %> |
+<%= link_to 'Back', users_path %>
